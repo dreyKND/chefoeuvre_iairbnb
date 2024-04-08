@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images:{
-        domains:["links.papareact.com","www.immo-casa.fr"],
+        
+        
+        domains:["images.unsplash.com","links.papareact.com","www.immo-casa.fr"],
     },
 };
 
