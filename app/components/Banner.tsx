@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const Banner = () => {
     return(
@@ -8,6 +8,10 @@ const Banner = () => {
                 alt="banner-img"
                 layout="fill"
                 objectFit="cover"
+                sizes="(max-width: 768px) 100vw,
+                (max-width: 1200px) 50vw,
+                33vw"
+   
             />
             <div className=" absolute top-1/2 w-full text-center">
                 <p className=" text-sm sm:text-lg text-white">Not sure what to choose? Perfect</p>

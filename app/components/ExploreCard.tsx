@@ -1,11 +1,11 @@
 import { ExploreItem } from '../types/app';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 type ExploreCardProps = ExploreItem;
 
 const ExploreCard = ({ location, distance, img }: ExploreCardProps) => {
     return (
-        <div>
+        <div className=' flex items-center m-2 mt-5 space-x-4 cursor-pointer hover:bg-gray-100 hover:scale-105 transition transform duration-200 ease-out'>
             <div className='relative w-16 h-16'>
                 <Image src={img}  alt='ExploreCard-Img' 
                 width={100}
